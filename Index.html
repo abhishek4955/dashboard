@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script differ src="https://kit.fontawesome.com/43124b690f.js" crossorigin="anonymous"></script>
+    <script differ src=""></script>
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <nav>
+    <ul>
+        <li>
+           <a href=""> <img src="https://th.bing.com/th/id/R.aea968420efd56a83f3783c0a8e79b07?rik=hZWaYirLFA0oXw&riu=http%3a%2f%2fwww-dsc.mech.eng.osaka-u.ac.jp%2fosuka60%2fassets%2flogo.png&ehk=gMZ7bMnFrXXmX0%2fk9y%2bTPNk8ANob5HqUVRYVqbtlKhU%3d&risl=&pid=ImgRaw&r=0" alt="Visa" style="width: 40px;"> </a>
+        </li>
+        <li> 
+            <img src="./Assets/search.png" alt="search">    
+        </li>
+        <li style="margin-top: 80px;">
+            <img src="./Assets/home.png" alt="Home">
+        </li>
+        <li>
+            <img src="./Assets/rectangle-list.png" alt="list">
+        </li>
+        <li> 
+            <img src="./Assets/newspaper-folded.png" alt="Newspaper">
+        </li>
+        <li> 
+            <img src="./Assets/user.png" alt="user">
+        </li>
+        <li style="margin-top: 400px;">
+            <img src="./Assets/bell.png" alt="bell" >
+        </li>
+        <li> 
+            <img src="./Assets/sign-out-alt.png" alt="Logout">
+        </li>
+        <li> 
+        </li>
+    </ul>
+</nav>
+
+
+<div class="container">
+    <div class="left">
+        <div class="left-side">
+            <div class="profile">
+            <div class="profile-pic">
+                <img src="./Assets/profile.png" alt="profile">
+            </div>
+            <div class="profile-name">
+                <h1 style="margin-top: 40px;">Hi Mike,</h1>
+                <h3>welcome back.</h3>
+            </div>
+        </div>
+        <div class="account">
+            <div class="balance">
+                <h2>Today</h2>
+                <h1>$19,892</h1>
+                <h3>Account Balance</h3>
+                <h2>$4,000</h2>
+                <h3>Year-to-Date Contributions</h3>
+                <h2>$1,892</h2>
+                <h3>Total Interest</h3>
+            </div>
+            <button class="button">I want to  <i class="fa-solid fa-caret-down"></i></button>
+        </div>
+
+            <div class="transaction">
+                <h1>Recent Transaction</h1>
+
+                <div class="tansactions">
+                    <div class="report">
+                        <h3>2020-08-07</h3>
+                        <h1>Withdrawl Transfer to Bank-XXX11</h1>
+                    </div>
+
+                    <div class="report">
+                        <h3>2020-07-21</h3>
+                        <h1>Withdrawl Transfer to Bank-XXX11</h1>
+                    </div>
+
+                    <div class="report">
+                        <h3>2020-07-16</h3>
+                        <h1>Withdrawl Transfer to Bank-XXX11</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+      <div class="head">
+        <h3>Retirement Income</h3>
+        <h1>Starting Year 2056</h1>
+      </div>
+      <div class="component">
+        <div class="retirement">
+            <div class="goals">
+            <h1>$300,000</h1>
+            <h2>My Goal</h2>
+        </div>
+        </div>
+        <div class="retirement-goals">
+            
+        <div class="retirement">
+            <h1>59%</h1>
+            <h2>Goal Achieved</h2>
+        </div>
+        <div class="retirement">
+            <h1>$300</h1>
+            <h2>Est. Monthly Income</h2>
+        </div>
+        </div>
+               
+    </div>
+    <div class="chart">
+        <canvas id="myChart"></canvas>
+      </div>
+    <div class="peers">
+      <div class="tittle">
+        <h1>How do I compare to my peers ?</h1>
+        <h3>These numbers represent current goal achievement</h3>
+      </div>
+
+      <!-- <div class="information">
+      <div class="info">
+        <h1>Age : <span>Under 30 <i class="fa-solid fa-caret-down"></i></span></h1>
+        <h1>Salary : <span>K 20 - K 30 <i class="fa-solid fa-caret-down"></i></span></h1>
+        <h1>Gender : <span>Male <i class="fa-solid fa-caret-down"></i></span></h1>
+      </div>
+      <div class="sphere">
+      <div class="skill">
+        <div class="outer">
+            <div class="inner">
+                <div id="number">
+                    78%
+                </div>
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <defs>
+               <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+               </linearGradient>
+            </defs>
+            <circle class="circle-1" cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="skill">
+        <div class="outer">
+          <div class="inner">
+            <div id="number">95%</div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <defs>
+            <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#fbc02d" />
+              <stop offset="100%" stop-color="#ff5722" />
+            </linearGradient>
+          </defs>
+          <circle class="circle-2" cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="skill">
+        <div class="outer">
+          <div class="inner">
+            <div id="number">59%</div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <defs>
+            <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#4caf50" />
+              <stop offset="100%" stop-color="#8bc34a" />
+            </linearGradient>
+          </defs>
+          <circle class="circle-3" cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+      </div> -->
+    </div>
+  </div>
+  
+
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- <div class="right">
+        <div class="options">
+        <div class="heading">
+            <h1>Retirement Strategy</h1>
+        </div>
+        <div class="tittle">
+            <h1>Employee Contribution</h1>
+        </div>
+        <div class="range-slider">
+            <input type="range" min="0" max="100" value="12" class="slider">
+            <div class="slider-thumb">
+                <div class="tooltip">
+                    <h1>12%</h1>
+                </div>
+            </div>
+            <div class="progress"></div>
+        </div>
+        
+        <div class="tittle">
+            <h1>Retirement Age</h1>
+        </div>
+        <div class="range-slider">
+            <input type="range" min="0" max="100" value="12" class="slider">
+            <div class="slider-thumb">
+                <div class="tooltip">
+                    <h1>65</h1>
+                </div>
+            </div>
+            <div class="progress"></div>
+        </div>
+        <div class="details">
+            <h1>Employer Contribution <span>8.4%</span> </h1>
+            <h1>Interest Rate <span>5%</span> </h1>
+        </div>
+       <div class="btn">
+        <button class="update">Update</button>
+        <h1 class="docs">View Help Docs<i class="fa-solid fa-angle-right"></i></h1>
+       </div>
+        </div>
+        <div class="more-info">
+            <h1 class="text-1">Are you considering a</h1>
+            <h2>Housing Advance?</h2>
+            <h3>Limited time reduced interest.</h3>
+            <h4>Learn More <i class="fa-solid fa-angle-right"></i></h4>
+        </div>
+    </div> -->
+
+   
+    </div>
+
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          
+<script src="./script.js">
+</script>
+</body>
+</html>
